@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-function eratosthenesSieve($limit){
+function eratosthenesSieve(int $limit): array{
   $s = floor(sqrt($limit));
   $integers = [];
   for ($i = 2; $i <= $limit; $i++) {
